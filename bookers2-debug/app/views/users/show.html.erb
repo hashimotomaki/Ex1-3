@@ -30,8 +30,8 @@
 						</td>
 						<td><%= link_to book.title, book_path(book), class: "book_#{book.id}" %></td>
 						<td><%= book.body %></td>
-					</tr>
-				<% end %>
+
+
 			<!--	<tb>< if @book.favorited_by?(current_user) %>-->
    <!--               <= link_to book_favorites_path(@post_image), method: :delete do %>-->
    <!--                  <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>-->
@@ -44,8 +44,10 @@
    <!--               < end %>-->
    <!--           < end %>-->
    <!--       </tb>-->
-			<!--		<tb><= @book.book_comments.count, class:"fa fa-comment" %><span class="comment-count">コメント数:<= @post_image.post_comments.count %></span></tb>-->
-			</tbody>
+             <td>コメント数:<%= book.book_comments.count %></td>
+             <% end %>
+           </tr>
+				</tbody>
 		</table>
 		<!--books一覧 -->
 	</div>
