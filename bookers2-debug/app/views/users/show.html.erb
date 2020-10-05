@@ -32,6 +32,19 @@
 						<td><%= book.body %></td>
 					</tr>
 				<% end %>
+			<!--	<tb>< if @book.favorited_by?(current_user) %>-->
+   <!--               <= link_to book_favorites_path(@post_image), method: :delete do %>-->
+   <!--                  <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>-->
+   <!--                  <= @book.favorites.count %> いいね-->
+   <!--               < end %>-->
+   <!--             < else %>-->
+   <!--               <= link_to book_favorites_path(@book), method: :post do %>-->
+   <!--                 <i class="fa fa-heart-o" aria-hidden="true"></i>-->
+   <!--                 <= @book.favorites.count %> いいね-->
+   <!--               < end %>-->
+   <!--           < end %>-->
+   <!--       </tb>-->
+			<!--		<tb><= @book.book_comments.count, class:"fa fa-comment" %><span class="comment-count">コメント数:<= @post_image.post_comments.count %></span></tb>-->
 			</tbody>
 		</table>
 		<!--books一覧 -->
